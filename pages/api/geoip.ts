@@ -25,6 +25,7 @@ export default function handler(
   }
 
   ip = ip || req.headers.forwarded;
+  console.log(req.headers.forwarded);
   if (!ip) {
     res.status(400).json({ error: 'Not found client IP' });
     return;
