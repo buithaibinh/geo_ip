@@ -20,6 +20,7 @@ export default function handler(
   // get client ip
   let ip: any = req.headers['x-real-ip'];
 
+  // if user provide ip as query param. use it instead
   if (req.query.ip) {
     ip = req.query.ip;
   }
