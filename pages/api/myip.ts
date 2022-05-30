@@ -6,11 +6,8 @@ import geo, { Lookup } from 'geoip-lite';
 interface GeoIPResponse extends Lookup {}
 
 type Data = {
-  data?: {
-    ip: string | null | [string];
-    geo: GeoIPResponse | null;
-  };
-  error?: string;
+  ip: string | null | [string];
+  geo: GeoIPResponse | null;
 };
 
 export default function handler(
@@ -27,5 +24,5 @@ export default function handler(
 
   const lookup = geo.lookup(ip);
 
-  return res.status(200).json({ data: { ip, geo: lookup } });
+  return res.status(200).json({ ip, geo: lookup });
 }
