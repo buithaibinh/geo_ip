@@ -2,7 +2,7 @@
 
 Try it with free on RapidAPI: [ip to location](https://rapidapi.com/sk-global-sk-global-default/api/ip-to-location1)
 
-## Samle
+## Sample
 
 ```bash
 curl 'https://geo-ip-api.vercel.app/api/myip'
