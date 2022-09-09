@@ -15,6 +15,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  console.log(req.headers);
   let ip: any = req.headers['x-real-ip'];
 
   // if user provide ip as query param. use it instead
