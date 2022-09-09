@@ -27,7 +27,7 @@ export default async function handler(
   console.log('geo data:', lookup, ip);
 
   const imgStream = request.get(
-    'https://i1-dulich.vnecdn.net/2022/09/07/mu1-1662526438-2195-1662526498.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=GF4PRNfV83Flt1DhqbADbw'
+    'https://www.codewithyou.com/_next/image?url=%2Fstatic%2Fimages%2Faws-cognito-anonymous-user-access-api.jpg&w=828&q=75'
   );
   // pipe the result stream into response
   return imgStream.pipe(res);
