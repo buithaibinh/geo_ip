@@ -23,7 +23,7 @@ export default async function handler(
   }
 
   const lookup = geo.lookup(ip);
-  console.log('FOUND data:', lookup);
+  console.log('geo data:', lookup, ip);
 
   const imgStream = request.get(
     'https://i1-dulich.vnecdn.net/2022/09/07/mu1-1662526438-2195-1662526498.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=GF4PRNfV83Flt1DhqbADbw'
